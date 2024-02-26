@@ -11,6 +11,7 @@
     <PackageReference Include="EPPlus" Version="7.0.9" />
     <PackageReference Include="Fizzler.Systems.HtmlAgilityPack" Version="1.2.1" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.59" />
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
   </ItemGroup>
 
 </Project>
