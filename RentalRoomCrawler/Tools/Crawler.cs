@@ -51,7 +51,7 @@ public class Crawler
                         var roomDescription = documentForDetail.GetSingleNode("section.post-main-content > div.section-content").GetInnerText();
                         var roomArea = documentForDetail.GetSingleNode("div.acreage > span").GetInnerText().ReplaceMultiToEmpty(new List<string>() { "m2" });
                         var roomPhone = documentForDetail.GetSingleNode("#aside > div > a.btn.author-phone")?.GetInnerText();
-                        var roomPrice = documentForDetail.GetSingleNode("div.price > span").GetInnerText().ReplaceMultiToEmpty(new List<string>() { " triệu/tháng" });
+                        var roomPrice = documentForDetail.GetSingleNode("div.price > span").GetInnerText().ReplaceMultiToEmpty(new List<string>() { " triệu/tháng", " đồng/tháng" });
                         var roomAddress = documentForDetail.GetSingleNode("span.post-fix-bar-address").GetInnerText();
 
                         var roomImageNode = documentForDetail.GetSingleNode("div.swiper-slide > img");
